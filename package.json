@@ -1,0 +1,11 @@
+{
+  "name": "w4-refactoring",
+  "version": "1.0.0",
+  "description": "\"refactorizar un codigo con clases\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "felix velazco",
+  "license": "ISC"
+}
