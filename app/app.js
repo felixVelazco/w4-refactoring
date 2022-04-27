@@ -1,15 +1,15 @@
 // const fs = require("fs");
 const Reader = require("./../lib/utils/Reader");
-const ExplorerService = require('./../lib/utils/ExplorerService');
-const FizzbuzzService = require('./../lib/utils/FizzbuzzService');
+const ExplorerService = require("./../lib/utils/ExplorerService");
+const FizzbuzzService = require("./../lib/utils/FizzbuzzService");
 // Part 1 Read json file ===========================
 const explorers = Reader.readJsonFile("explorers.json");
 
 const explorersInNode = ExplorerService.filterByMission(explorers, "node");
-const numberOfExplorersInNode = ExplorerService.getAmountOfExplorersByMission(explorers, 'node');
+const numberOfExplorersInNode = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
 const usernamesInNode = ExplorerService.getExplorersUsernamesByMission(explorers, "node");
 
-console.log(explorersInNode)
+console.log(explorersInNode);
 console.log(numberOfExplorersInNode);
 console.log(usernamesInNode);
 

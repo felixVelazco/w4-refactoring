@@ -1,1 +1,1 @@
-require('globalthis/auto')
+require("globalthis/auto");
