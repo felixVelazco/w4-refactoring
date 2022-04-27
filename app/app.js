@@ -11,7 +11,8 @@ const explorersInNode = ExplorerService.filterByMission(explorers, "node");
 
 //const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
 console.log(explorersInNode)
-console.log(explorersInNode.length)
+const numberOfExplorersInNode = ExplorerService.getAmountOfExplorersByMission(explorers, 'node');
+console.log(numberOfExplorersInNode);
 
 // Part4: Get the explorer's usernames in Node
 const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
