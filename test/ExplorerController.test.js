@@ -14,4 +14,9 @@ describe('ExplorerController test suite',() =>{
   test.each(explorersInJava)("2.%#) Test getExplorerByMission in Java", (explorer) => {
     expect(explorer.mission).toBe("java");
   })
+
+  const explorersUsername = ExplorerController.getExplorersUsernamesByMission("node");
+  test("3) Test getExplorersUsernamesByMission", () => {
+    expect(explorersUsername.length).toBe(10);
+  })
 })
