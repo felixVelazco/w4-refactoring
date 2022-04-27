@@ -12,7 +12,7 @@ describe('Fizzbuzz Test suite',() =>{
     else if(a.score % 3 ===0)
       expect(a.trick).toBe("fizz");
     else if(a.score % 5 ===0)
-      expect(a.trick).toBe("buzz");
+      expect(a.trick).toBe("buzzz");
     else
       expect(a.trick).toBe(a.score);
   })
