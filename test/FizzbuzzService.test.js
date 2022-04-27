@@ -1,5 +1,5 @@
 const Reader = require("./../lib/utils/Reader");
-const FizzbuzzService = require("./../lib/utils/FizzbuzzService");
+const FizzbuzzService = require("./../lib/services/FizzbuzzService");
 
 const explorers = Reader.readJsonFile("explorers.json");
 
