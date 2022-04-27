@@ -4,7 +4,7 @@
   "description": "\"refactorizar un codigo con clases\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/jest/bin/jest"
   },
   "author": "felix velazco",
   "license": "ISC",
