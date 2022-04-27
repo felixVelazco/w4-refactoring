@@ -9,7 +9,7 @@
   "author": "felix velazco",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^28.0.1"
+    "jest": "^26.0.0"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
