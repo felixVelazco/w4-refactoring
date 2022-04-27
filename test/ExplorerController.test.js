@@ -23,4 +23,24 @@ describe("ExplorerController test suite",() =>{
         const explorersAmountInNode = ExplorerController.getExplorersAmountByMission("node");
         expect(explorersAmountInNode).toBe(10);
     });
+    test("5) Test getFizzbuzzNumber (number)", () => {
+      const fizzbuzzNumber = ExplorerController.getFizzbuzzNumber(2);
+      expect(fizzbuzzNumber.score).toBe(2);
+      expect(fizzbuzzNumber.trick).toBe(2);
+    })
+    test("6) Test getFizzbuzzNumber (fizz)", () => {
+      const fizzbuzzNumber = ExplorerController.getFizzbuzzNumber(3);
+      expect(fizzbuzzNumber.score).toBe(3);
+      expect(fizzbuzzNumber.trick).toBe("fizz");
+    })
+    test("7) Test getFizzbuzzNumber (buzz)", () => {
+      const fizzbuzzNumber = ExplorerController.getFizzbuzzNumber(5);
+      expect(fizzbuzzNumber.score).toBe(5);
+      expect(fizzbuzzNumber.trick).toBe("buzz");
+    })
+    test("8) Test getFizzbuzzNumber (fizzbuzz)", () => {
+      const fizzbuzzNumber = ExplorerController.getFizzbuzzNumber(15);
+      expect(fizzbuzzNumber.score).toBe(15);
+      expect(fizzbuzzNumber.trick).toBe("fizzbuzz");
+    })
 });
