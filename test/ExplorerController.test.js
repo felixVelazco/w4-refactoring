@@ -15,8 +15,12 @@ describe('ExplorerController test suite',() =>{
     expect(explorer.mission).toBe("java");
   })
 
-  const explorersUsername = ExplorerController.getExplorersUsernamesByMission("node");
   test("3) Test getExplorersUsernamesByMission", () => {
-    expect(explorersUsername.length).toBe(10);
+    const explorersUsernameInNode = ExplorerController.getExplorersUsernamesByMission("node");
+    expect(explorersUsernameInNode).not.toBeUndefined();
+  })
+  test("4) Test getExplorersAmountByMission", () => {
+    const explorersAmountInNode = ExplorerController.getExplorersAmountByMission("node");
+    expect(explorersAmountInNode).toBe(10);
   })
 })
