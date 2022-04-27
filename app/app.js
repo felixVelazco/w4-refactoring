@@ -1,13 +1,17 @@
 // const fs = require("fs");
 const Reader = require("./../lib/utils/Reader");
-
+const ExplorerService = require('./../lib/utils/ExplorerService');
 // Part 1 Read json file ===========================
 const explorers = Reader.readJsonFile("explorers.json");
 // console.log(explorers);
 
 // Part 2: Get the quantity of explorers names in node
-const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
-// console.log(explorersInNode.length)
+
+const explorersInNode = ExplorerService.filterByMission(explorers, "node");
+
+//const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
+console.log(explorersInNode)
+console.log(explorersInNode.length)
 
 // Part4: Get the explorer's usernames in Node
 const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
