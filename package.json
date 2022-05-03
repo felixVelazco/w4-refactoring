@@ -7,7 +7,8 @@
     "test": "node ./node_modules/jest/bin/jest",
     "linter": "node ./node_modules/eslint/bin/eslint.js .",
     "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
-    "server": "node ./lib/server.js"
+    "server": "node ./lib/server.js",
+    "bot": "node ./lib/bot.js"
   },
   "author": "felix velazco",
   "license": "ISC",
@@ -18,6 +19,7 @@
   "dependencies": {
     "express": "^4.18.0",
     "fs": "^0.0.1-security",
-    "globalthis": "^1.0.2"
+    "globalthis": "^1.0.2",
+    "node-telegram-bot-api": "^0.57.0"
   }
 }
