@@ -17,6 +17,7 @@
     "jest": "^26.0.0"
   },
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.18.0",
     "fs": "^0.0.1-security",
     "globalthis": "^1.0.2",
